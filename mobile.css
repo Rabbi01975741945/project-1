@@ -1,0 +1,105 @@
+@media screen and (max-width: 700px) {
+  
+    @keyframes lefts {
+       
+        100%{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    @keyframes anim {
+      
+        100%{
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+    }
+
+    nav{
+        position: relative;
+    }
+    nav ul{
+        position: absolute;
+        flex-direction: column;
+        border: 1px solid red;
+        top: 75px;
+        width: 250px;
+        background-color: rgba(255,255,255,0.30);
+        backdrop-filter: blur(10px);
+        z-index: 1;
+
+
+    }
+    nav ul li{
+        
+        margin: 5px 0;
+        padding: 10px 15px;
+        
+    }
+    nav ul li:hover{
+        box-shadow: 0 3px 6px rgba(0,0,0,0.50);
+    }
+    nav ul li a{
+        color: #111;
+        font-weight: 600;
+    }
+    .banner{
+        max-width: 90%;
+    }
+    .explore{
+        flex-direction: column;
+        margin-top: 20px;
+        max-width: 90%;
+    }
+    .explore .left-image{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px;
+    }
+    .explore .left-image img:hover{
+        box-shadow: none;
+    }
+    .explore .text{
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        padding-left: 20px;
+        margin-top: 20px;
+    }
+    .features{
+        flex-direction:column;
+    }
+    .features .left-text-div{
+        width: 100%;
+    }
+    .features .right-image-div{
+   
+        width: 100%;
+        padding: 35px;
+        position: relative;
+    }
+    .right-image-div .tooltip{
+        bottom: 0;
+        left: 0;
+    }
+    .some-facts{
+        margin-top: 40px;
+    }
+    .container{
+    
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .container .card{
+        width: 100%;
+        margin-top: 10px;
+    }
+   
+    
+  }
